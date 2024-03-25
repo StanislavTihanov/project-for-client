@@ -1,9 +1,7 @@
 <?php
     $name = $_POST['name'];
-    $surname = $_POST['surname'];
 	$phone = $_POST['phone'];
-    $email = $_POST['email'];
-    $text = $_POST['text'];
+
 
 	$to = "stas89tihanov@gmail.com"; 
 	$date = date ("d.m.Y"); 
@@ -14,12 +12,9 @@
 	
 	$msg="
     Имя: $name /n
-    Фамилия: $surname /n
     Телефон: $phone /n
-    Почта: $email /n
-    Текст: $text"; 	
 	mail($to, $subject, $msg, "From: $from ");
 
 ?>
 
-<p>Привет, форма отправлена</p>
+<p>Форма отправлена</p>
