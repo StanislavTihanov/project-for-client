@@ -29,34 +29,7 @@ const list = document.querySelector('.categories__list');
 
 
 
-//------------------------------------------------------------------------счетчики 
-window.onload= function () {
-  let one = 0;
-  let timer1 = setInterval(function () {
-      one++;
-      document.getElementById('timer-one').innerHTML = '' + one;
-      if (one === 108) {
-          clearInterval(timer1);
-      }
-  }, 10)
-  let two = 0;
-  let timer2 = setInterval(function () {
-      two++;
-      document.getElementById('timer-two').innerHTML = '' + two;
-      if (two === 55) {
-          clearInterval(timer2);
-      }
-  }, 20)
-  let three = 0;
-  let timer3 = setInterval(function () {
-    three++;
-      document.getElementById('timer-three').innerHTML = '' + three;
-      if (three === 3) {
-          clearInterval(timer3);
-      }
-  }, 200)
-}
-//------------------------------------------------------------------------счетчики 
+
 //------------------------------------------------------------------------Меню-Бургер
 const burgerMenu = document.querySelector('.header__burger');
 const menuBody= document.querySelector('.menu');

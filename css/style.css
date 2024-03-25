@@ -107,6 +107,12 @@ body.lock {
   font-size: clamp(64px, 6.8vw, 98px);
   color: var(--color-main);
 }
+.title-second {
+  margin-bottom: 30px;
+}
+.title-second h1 {
+  font-size: clamp(40px, 4.4vw, 64px);
+}
   /*
   1600px / 100px
   1vw = 16px
@@ -182,15 +188,6 @@ body.lock {
 .menu__list-item--mod .categories__list li a {
   opacity: 0.8;
   font-size: 18px;
-}
-.menu__list-item--mod::after {
-  position: absolute;
-  content: '';
-  border: 5px solid transparent; 
-  border-top: 5px solid var(--color-red);
-  top: 7px;
-  left: 75px;
-  cursor: pointer;
 }
 .menu__list-item a {
   font-size: 18px;
@@ -668,6 +665,114 @@ form button {
   max-width: 30px;
 }
 /*---------------------------------------footer----------------------------*/
+
+/*---------------------------------------------------------------------------Страница о нас----------------------------*/
+.aboutus {
+  margin-top: 111px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.aboutus__content-breadcrumbs {
+  margin-bottom: 60px;
+}
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+  gap: 10px 32px;
+  flex-wrap: wrap;
+}
+.breadcrumbs__link {
+  color: var(--color-main);
+  font-size: 16px;
+}
+.breadcrumbs__link--mod {
+  cursor: default;
+  position: relative;
+}
+.breadcrumbs__link--mod::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 2px;
+  top: 7px;
+  left: -20px;
+  background-color: var(--color-main);
+  border-radius: 3px;
+}
+.aboutus__body-bg {
+  max-width: 514px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: -111px;
+}
+.aboutus__text-wrapper {
+  background: rgba(244, 244, 244, 0.8);
+  border-radius: 25px;
+  padding: 30px 10px;
+  text-align: center;
+  margin-bottom: 27px;
+  position: relative;
+}
+.aboutus__text {
+  font-family: 'Unbounded';
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 130%;
+}
+.aboutus__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.aboutus__blocks {
+  display: flex;
+  gap: 20px;
+}
+.aboutus__block {
+  position: relative;
+  max-width: 380px;
+  background-color: var(--color-bg);
+  border-radius: 25px;
+}
+.aboutus__block-inner {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+.aboutus__block-title {
+  display: flex;
+  align-items: center;
+  gap: 10px 20px;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+.aboutus__block-title img {
+  width: 55px;
+  opacity: 0.5;
+}
+.aboutus__block-title h2 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 16px;
+}
+.aboutus__block-text p {
+  font-family: 'Unbounded';
+  font-size: 16px;
+  line-height: 125%;
+}
+.aboutus__block-2,
+.aboutus__block-3 {
+  padding: 30px 20px 20px 20px;
+}
+.aboutus__block-2 {
+  margin-top: 16px;
+
+}
+.aboutus__block-3 {
+  margin-bottom: 20px;
+  padding-top: 38px;
+}
+/*---------------------------------------------------------------------Страница о нас----------------------------*/
 
 /*-------------------------------------------popup
 .popup{
@@ -1165,6 +1270,10 @@ form{
     background-color: var(--color-red);
     color: var(--color-white);
   }
+  .aboutus__block:hover .aboutus__block-title img {
+    transition: all 0.3s;
+    opacity: 1;
+  }
 }
 /*---------------------------------------media-hover----------------------------*/
 
@@ -1222,7 +1331,18 @@ form{
     max-width: 300px;
     top: 0;
   }
+  .aboutus__block-4 {
+    margin-top: -50px;
+  }
+  .aboutus__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
+
+
 
 @media (max-width: 850px) {
   .order__body {
@@ -1312,7 +1432,7 @@ form{
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    padding: 100px 30px 30px 30px; 
+    padding: 120px 30px 30px 30px; 
     transition: All 0.5s ease 0s;
     overflow: auto;
     z-index: 2;
@@ -1340,18 +1460,27 @@ form{
   .main-section__text {
     max-width: 225px;
   }
-  .menu__list-item--mod::after {
-    position: absolute;
-    content: '';
-    border: 5px solid transparent; 
-    border-top: 5px solid var(--color-red);
-    top: 7px;
-    cursor: pointer;
-  }
   .categories__blocks {
     grid-template-columns: 1fr 1fr;
     max-height: 750px;
   }
+  .aboutus__block-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutus__block-3 {
+    order: 1;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .aboutus__block {
+    max-width: 450px;
+  }
+  .aboutus__body-bg {
+    top: -20px;
+    transform: translate(0%);
+    right: -100px;
+ }
 }
 
 @media (max-width: 600px) {
@@ -1500,6 +1629,9 @@ form{
     right: 20px;
   }
   .footer {
+    margin-bottom: 30px;
+  }
+  .aboutus__content-breadcrumbs {
     margin-bottom: 30px;
   }
 }
