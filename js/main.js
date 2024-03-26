@@ -330,23 +330,60 @@ if (menuLinks.length > 0) {
 
 
 //------------------------------------------------------------------------Слайдер
-//const swiper = new Swiper('.swiper', {
-//  direction: 'horizontal',
-//  loop: true,
-//  pagination: {
-//    el: '.swiper-pagination',
-//    clickable: true,
-//  },
-//  navigation: {
-//    nextEl: '.swiper-button-next',
-//    prevEl: '.swiper-button-prev',
-//  },
-//  autoplay: {
-//    delay: 2000,
-//  },
-//  speed: 2000,
-//});
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  speed: 2000,
+  centeredSlides: true,
+  slidesPerView: 2,
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+});
 //------------------------------------------------------------------------Слайдер
+
+
+//------------------------------------------------------------------------Подключение библиотеки для табов
+var mixer = mixitup('.gallery__inner', {
+  load: {
+    filter: '.btn-active'
+}
+});
+//------------------------------------------------------------------------Подключение библиотеки для табов
+// Получаем все элементы, на которые нужно повесить обработчик событий
+const elements = document.querySelectorAll('.gallery__btn');
+
+// Добавляем обработчик событий 'click' каждому элементу
+elements.forEach(element => {
+ element.addEventListener('click', function() {
+    // Удаляем класс 'active' у всех элементов
+    elements.forEach(el => {
+      el.classList.remove('btn-active');
+    });
+    // Добавляем класс 'active' к элементу, на который был совершен клик
+    this.classList.add('btn-active');
+ });
+});
+//------------------------------------------------------------------------эммитация клика на активную кнопку
+$(document).ready(function() {
+  $('.btn-active').trigger('click');
+});
+//------------------------------------------------------------------------эммитация клика на активную кнопку
 
 
 //------------------------------------------------------------------------popup

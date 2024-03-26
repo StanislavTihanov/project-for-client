@@ -19,7 +19,7 @@
       <div class="header__content _container">
         <div class="header__body">
           <div class="logo">
-            <a href="#">
+            <a href="index.html">
               <img src="images/logo.svg" alt="logo">
               хлебозавод №5
             </a>
@@ -27,19 +27,19 @@
           <nav class="menu" id="menu">
             <ul class="menu__list">
               <li class="menu__list-item menu__list-item--mod">
-                <a href="#">Категории</a>
+                <a href="wedding.html">Категории</a>
                 <ul class="categories__list">
                   <li> 
-                    <a href="#">Свадебные</a>
+                    <a href="wedding.html">Свадебные</a>
                   </li>
                   <li> 
-                    <a href="#">Для любимых</a>
+                    <a href="love.html">Для любимых</a>
                   </li>
                   <li> 
-                    <a href="#">Праздничные</a>
+                    <a href="#!">Праздничные</a>
                   </li>
                   <li> 
-                    <a href="#">Детские</a>
+                    <a href="child.html">Детские</a>
                   </li>
                 </ul>
               </li>
@@ -72,10 +72,9 @@
     </header>
 
     <main class="main">
-     
-      <section class="aboutus">
-        <div class="aboutus__content _container">
-          <div class="aboutus__content-breadcrumbs">
+      <section class="gallery">
+        <div class="gallery__content">
+          <div class="aboutus__content-breadcrumbs _container">
             <ul class="breadcrumbs__list" itemscope itemtype="index.html">
               <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="index.html">
               <a itemprop="item" href="index.html" class="breadcrumbs__link">
@@ -83,96 +82,308 @@
               </a>
               <meta itemprop="position" content="1" />
               </li>
+              <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="свадебные.html">
+                <a itemprop="item" href="index.html" class="breadcrumbs__link breadcrumbs__link--mod">
+                <span itemprop="name">Категории</span>
+                </a>
+                <meta itemprop="position" content="2" />
+                </li>
               <li class="breadcrumbs__item" itemprop="itemListElement">
               <a itemprop="item" href="#!" class="breadcrumbs__link breadcrumbs__link--mod">
-              <span itemprop="name">О нас</span>
+              <span itemprop="name">Праздничные</span>
               </a>
-              <meta itemprop="position" content="2" />
+              <meta itemprop="position" content="3"/>
               </li>
             </ul>
           </div>
-          <div class="title-second">
-            <h1>О нас</h1>
-          </div>
-           <div class="aboutus__body">
-            <div class="aboutus__body-bg">
+          <div class="gallery__top _container">
+            <div class="title-second">
+              <h1>Создай волшебные моменты вместе с нашими тортами</h1>
+            </div>
+            <div class="gallery__top-text">
+              <p>Идеи которые уже реализованы</p>
+            </div>
+            <div class="gallery__top-image">
               <picture>
-                <source media="(min-width: 1440px)" srcset="images/aboutus-img-bg@2x.webp">
-                <img src="images/aboutus-img-bg.webp" alt="background image" loading="lazy">
+                <source media="(min-width: 1440px)" srcset="images/vacancy-img-bg-right@2x.webp">
+                <img src="images/vacancy-img-bg-right.webp" alt="image background" loading="lazy">
               </picture>
             </div>
-            <div class="aboutus__text-wrapper">
-              <div class="aboutus__text">
-                <p>Мы принимаем заказы любой сложности: от традиционных классических тортов до инновационных, соответствующих современным вкусам.</p>
-                <p>Каждый торт уникален – мы создаем их по вашим эскизам, с индивидуальным оформлением, для различных событий и предпочтений.</p>
-                <p>Наша команда дизайнеров готова воплотить любую идею в жизнь. </p>
+          </div>
+          <div class="gallery__wrapper">
+             <div class="gallery__buttons">
+              <button class="gallery__btn" data-filter = ".wedding">Свадебные</button>
+              <button class="gallery__btn" data-filter = ".love">Для любимых</button>
+              <button class="gallery__btn" data-filter = ".child">Детские</button>
+              <button class="gallery__btn btn-active" data-filter = ".holiday">Праздничные</button>
+             </div>
+             <div class="gallery__inner">
+
+              <div class="mix wedding">
+                <div class="swiper">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img2@2x.webp">
+                          <img src="images/wedding-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img3@2x.webp">
+                          <img src="images/wedding-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img1@2x.webp">
+                          <img src="images/wedding-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img3@2x.webp">
+                          <img src="images/wedding-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img2@2x.webp">
+                          <img src="images/wedding-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/wedding-img1@2x.webp">
+                          <img src="images/wedding-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="swiper-pagination"></div>
+                
+                  <div class="swiper-button-prev">
+                    <img src="images/arrow-prev.svg" alt="arrow prev">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/arrow-next.svg" alt="arrow next">
+                  </div>
+                
+                </div>
               </div>
-            </div>
-            <div class="aboutus__blocks">
-              <div class="aboutus__block-wrapper">
-                <div class="aboutus__block">
-                  <img src="images/aboutus-block-img1.webp" alt="aboutus image">
-                  <div class="aboutus__block-inner">
-                    <div class="aboutus__block-title">
-                      <img src="images/aboutus-block-icon1.svg" alt="icon">
-                      <h2>Удобная <br> оплата</h2>
+              <div class="mix love">
+                <div class="swiper">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img2@2x.webp">
+                          <img src="images/love-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
                     </div>
-                    <div class="aboutus__block-text">
-                      <p>Оплачивайте ваш заказ <br> при получении удобным способом в любой из 13 фирменных точек</p>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img1@2x.webp">
+                          <img src="images/love-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img3@2x.webp">
+                          <img src="images/love-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img2@2x.webp">
+                          <img src="images/love-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img1@2x.webp">
+                          <img src="images/love-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/love-img3@2x.webp">
+                          <img src="images/love-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="aboutus__block aboutus__block-2">
-                  <div class="aboutus__block-title">
-                    <img src="images/aboutus-block-icon3.svg" alt="icon">
-                    <h2>Гарантия качества</h2>
+                
+                  <div class="swiper-pagination"></div>
+                
+                  <div class="swiper-button-prev">
+                    <img src="images/arrow-prev.svg" alt="arrow prev">
                   </div>
-                  <div class="aboutus__block-text">
-                    <p>Собственная система контроля. Плюс мы готовим торт специально для Вас из натуральных продуктов.</p>
+                  <div class="swiper-button-next">
+                    <img src="images/arrow-next.svg" alt="arrow next">
                   </div>
+                
                 </div>
               </div>
-              <div class="aboutus__block-wrapper">
-                <div class="aboutus__block aboutus__block-3">
-                  <div class="aboutus__block-title">
-                    <img src="images/aboutus-block-icon2.svg" alt="icon">
-                    <h2>Более 16 основ на выбор</h2>
+              <div class="mix child">
+                <div class="swiper">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img1@2x.webp">
+                          <img src="images/child-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img3@2x.webp">
+                          <img src="images/child-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img1@2x.webp">
+                          <img src="images/child-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img2@2x.webp">
+                          <img src="images/child-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img3@2x.webp">
+                          <img src="images/child-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/child-img2@2x.webp">
+                          <img src="images/child-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
                   </div>
-                  <div class="aboutus__block-text">
-                    <p>Подберем идеальную основу торта на ваш вкус</p>
+                
+                  <div class="swiper-pagination"></div>
+                
+                  <div class="swiper-button-prev">
+                    <img src="images/arrow-prev.svg" alt="arrow prev">
                   </div>
+                  <div class="swiper-button-next">
+                    <img src="images/arrow-next.svg" alt="arrow next">
+                  </div>
+                
                 </div>
-                <div class="aboutus__block">
-                  <img src="images/aboutus-block-img2.webp" alt="aboutus image">
-                  <div class="aboutus__block-inner">
-                    <div class="aboutus__block-title">
-                      <img src="images/aboutus-block-icon4.svg" alt="icon">
-                      <h2>Собственное производство</h2>
+              </div>
+              <div class="mix holiday">
+                <div class="swiper">
+
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img1@2x.webp">
+                          <img src="images/holiday-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
                     </div>
-                    <div class="aboutus__block-text">
-                      <p>С 1966 года “Хлебозавод №5” производит кондитерские и хлебобулочные изделия высокого потребительского класса.</p>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img3@2x.webp">
+                          <img src="images/holiday-img3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img1@2x.webp">
+                          <img src="images/holiday-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img3@2x.webp">
+                          <img src="images/holiday-3.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img1@2x.webp">
+                          <img src="images/holiday-img1.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="gallery__block">
+                        <picture>
+                          <source media="(min-width: 1440px)" srcset="images/holiday-img2@2x.webp">
+                          <img src="images/holiday-img2.webp" alt="image background" loading="lazy">
+                        </picture>
+                      </div>
                     </div>
                   </div>
+                
+                  <div class="swiper-pagination"></div>
+                
+                  <div class="swiper-button-prev">
+                    <img src="images/arrow-prev.svg" alt="arrow prev">
+                  </div>
+                  <div class="swiper-button-next">
+                    <img src="images/arrow-next.svg" alt="arrow next">
+                  </div>
+                
                 </div>
               </div>
 
-              <div class="aboutus__block">
-                <img src="images/aboutus-block-img3.webp" alt="aboutus image">
-                <div class="aboutus__block-inner">
-                  <div class="aboutus__block-title">
-                    <img src="images/aboutus-block-icon5.svg" alt="icon">
-                    <h2>Индивидуальный подход</h2>
-                  </div>
-                  <div class="aboutus__block-text">
-                    <p>Поможем определиться со вкусом и декором торта в зависимости от повода</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-           </div>
+             </div>
+          </div>
         </div>
       </section>
-      
     </main>
 
     <footer class="footer">
@@ -181,7 +392,7 @@
 
           <div class="footer__block">
             <div class="logo">
-              <a href="#">
+              <a href="index.html">
                 <img src="images/logo.svg" alt="logo">
                 хлебозавод №5
               </a>
@@ -199,16 +410,16 @@
           <nav class="footer__nav">
             <ul class="footer__list">
               <li class="footer__item">
-                <a href="#">Свадебные</a>
+                <a href="wedding.html">Свадебные</a>
               </li>
               <li class="footer__item">
-                <a href="#">Праздничные</a>
+                <a href="holiday.html">Праздничные</a>
               </li>
               <li class="footer__item">
-                <a href="#">Выпускные</a>
+                <a href="child.html">Детские</a>
               </li>
               <li class="footer__item">
-                <a href="#">Для любимых</a>
+                <a href="love.html">Для любимых</a>
               </li>
             </ul>
           </nav>
@@ -254,6 +465,7 @@
     </footer>
   </div>
   <script src="js/jquery.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
