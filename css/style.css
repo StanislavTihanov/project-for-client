@@ -480,6 +480,8 @@ body.lock {
 }
 .contacts__content {
   margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
 }
 .contacts__map {
   max-width: 444px;
@@ -594,14 +596,14 @@ form button {
   left: 0;
   max-width: 412px;
   top: 186px;
-  z-index: -1;
+  z-index: 1;
 }
 .contacts__bg-right {
   position: absolute;
   max-width: 445px;
   top: -106px;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 /*---------------------------------------contacts----------------------------*/
 
@@ -773,6 +775,149 @@ form button {
   padding-top: 38px;
 }
 /*---------------------------------------------------------------------Страница о нас----------------------------*/
+
+
+/*---------------------------------------------------------------------Страница вакансии----------------------------*/
+.vacancy {
+  margin-bottom: 46px;
+  margin-top: 113px;
+}
+.vacancy__content .title-second{
+  margin-bottom: -30px;
+}
+.vacancy__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 69px;
+  position: relative;
+}
+.vacancy__body-title {
+  background: rgba(244, 244, 244, 0.938);
+  border-radius: 25px;
+  padding: 70px 10px;
+  text-align: center;
+  margin-right: -20px;
+  position: relative;
+  z-index: 3;
+  flex-basis: 600px;
+  margin-top: 13px;
+}
+.vacancy__body-title h2 {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+}
+.vacancy__body-images {
+  display: flex;
+  align-items: center;
+}
+.vacancy__body-image1 {
+  flex-basis: 423px;
+  margin-right: -64px;
+  position: relative;
+  z-index: 2;
+  margin-top: 70px;
+}
+.vacancy__body-image2 {
+  max-width: 450px;
+}
+.accordion__wrapper {
+  position: relative;
+  z-index: 2;
+}
+.accordion__title {
+  font-family: 'Unbounded';
+  display: flex;
+  align-items: center;
+  font-size: clamp(16px, 1.4vw, 20px);
+  font-weight: normal;
+  cursor: pointer;
+  border-top: none;
+  padding-bottom: 26px;
+}
+.accordion__title span {
+  border: 10px solid transparent; 
+  border-top: 10px solid var(--color-red);
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.accordion__title.active span{
+  border: 10px solid transparent; 
+  border-bottom: 10px solid var(--color-red);
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.accordion__content {
+  font-size: 16px;
+  line-height: 1.3;
+  overflow: hidden;
+  padding: 0 20px;
+  box-sizing: content-box;
+  border-top: none;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+.accordion__content.active {
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+.accordion__content > p {
+  margin-bottom: 25px;
+}
+.accordion__content p {
+  font-family: 'Unbounded';
+  font-size: 16px;
+}
+.accordion__list {
+  margin-bottom: 25px;
+}
+.accordion__list--mod li p {
+  position: relative;
+  padding-left: 25px;
+}
+.accordion__list--mod li p::before {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 7px;
+  left: 12px;
+  background-color: var(--color-main);
+}
+.vacancy__body-bg {
+  position: absolute;
+  max-width: 600px;
+  left: -129px;
+  top: 4px;
+}
+.vacancy__info {
+  position: relative;
+}
+.vacancy__info-bg {
+  position: absolute;
+  max-width: 518px;
+  right: -130px;
+  top: -220px;
+}
+/*---------------------------------------------------------------------Страница вакансии----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------popup
 .popup{
@@ -1339,6 +1484,16 @@ form{
     flex-wrap: wrap;
     justify-content: center;
   }
+  .vacancy__body-bg {
+    position: absolute;
+    max-width: 500px;
+    left: 0;
+    top: 0;
+  }
+  .vacancy__info-bg {
+    max-width: 400px;
+    top: -100px;
+  }
 }
 
 
@@ -1366,6 +1521,14 @@ form{
     top: 70px;
     padding: 0px 20px;
     left: 0;
+  }
+  .vacancy__body-bg {
+    max-width: 400px;
+    top: 0;
+  }
+  .vacancy__info-bg {
+    max-width: 300px;
+    top: -180px;
   }
 }
 
@@ -1481,6 +1644,13 @@ form{
     transform: translate(0%);
     right: -100px;
  }
+ .vacancy__body {
+  flex-wrap: wrap;
+ }
+ .vacancy__body-title {
+  order: 1;
+  flex-basis: 100%;
+ }
 }
 
 @media (max-width: 600px) {
@@ -1530,6 +1700,16 @@ form{
   }
   .order__block-title {
     max-width: 100%;
+  }
+  .vacancy__info-bg {
+    max-width: 250px;
+    top: -200px;
+    right: -70px;
+  }
+  .vacancy__body-bg {
+    max-width: 400px;
+    top: 0;
+    left: -150px;
   }
 }
 
@@ -1633,6 +1813,36 @@ form{
   }
   .aboutus__content-breadcrumbs {
     margin-bottom: 30px;
+  }
+  .vacancy {
+    margin-top: 115px;
+  }
+  .vacancy__body {
+    margin-bottom: 56px;
+  }
+  .vacancy__content .title-second {
+    margin-bottom: 2px;
+  }
+  .vacancy__body-image1 {
+    flex-basis: 367px;
+    margin-top: 47px;
+    margin-right: -28px;
+  }
+  .vacancy__body-image2 {
+    max-width: 192px;
+  }
+  .vacancy__body-title {
+    margin-top: 28px;
+  }
+  .vacancy__body-bg {
+    max-width: 307px;
+    top: 37px;
+    left: -113px;
+  }
+  .vacancy__info-bg {
+    max-width: 298px;
+    top: -250px;
+    right: -131px;
   }
 }
 /*---------------------------------------media----------------------------*/
