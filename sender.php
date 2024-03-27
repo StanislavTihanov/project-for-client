@@ -1,20 +1,22 @@
 <?php
-    $name = $_POST['name'];
-	$phone = $_POST['phone'];
+    $name = @$_POST['name'];
+	$phone = @$_POST['phone'];
 
-
-	$to = "stas89tihanov@gmail.com"; 
+	$to = "tanyasuper200@mail.ru"; 
 	$date = date ("d.m.Y"); 
 	$time = date ("h:i");
-	$from = $email;
+	$from = @$email;
 	$subject = "Заявка c сайта";
 
 	
 	$msg="
     Имя: $name /n
-    Телефон: $phone /n
+    Телефон: $phone"; 	
 	mail($to, $subject, $msg, "From: $from ");
 
 ?>
 
-<p>Форма отправлена</p>
+<p>Спасибо! <br>
+В ближайшее время с Вами свяжется менеджер
+</p>
+
