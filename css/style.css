@@ -1071,6 +1071,65 @@ form p {
 }
 /*-----------------------------------------------------------Policy---------------------------*/
 
+/*-----------------------------------------------------------404---------------------------*/
+.error {
+  padding: 120px 0px;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.error__content {
+  text-align: center;
+}
+.error__title h1 {
+  font-family: 'Unbounded';
+  font-size: clamp(20px, 1.6vw, 24px);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.error__body {
+  border-radius: 25px;
+  padding: 70px;
+  background-color: var(--color-bg);
+  max-width: 767px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.error__body span {
+  font-family: 'Unbounded';
+  font-weight: 400;
+  font-size: clamp(100px, 17.3vw, 250px);
+  line-height: 115%;
+}
+.error__link {
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+.error__link a {
+  font-family: 'Unbounded';
+  font-size: clamp(20px, 1.6vw, 24px);
+  font-weight: 400;
+  color: var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+}
+.error__image-bg-left {
+  position: absolute;
+  max-width: 600px;
+  top: -60px;
+  left: -350px;
+}
+.error__image-bg-right {
+  position: absolute;
+  max-width: 520px;
+  bottom: 0;
+  right: -320px;
+}
+
+/*-----------------------------------------------------------404---------------------------*/
+
+
 /*---------------------------------------media----------------------------*/
 
 /*---------------------------------------media-hover----------------------------*/
@@ -1192,8 +1251,6 @@ form p {
     height: 100%;
   }
 }
-
-
 
 
 @media (max-width: 850px) {
@@ -1435,6 +1492,24 @@ form p {
   }
   .swiper-button-next {
     margin-right: 10px;
+  }
+  .error__body {
+    padding: 25px 17px;
+  }
+  .error__image-bg-left {
+    position: absolute;
+    max-width: 400px;
+    top: 0px;
+    left: -200px;
+  }
+  .error__image-bg-right {
+    position: absolute;
+    max-width: 480px;
+    bottom: -200px;
+    right: -150px;
+  }
+  .error {
+    padding: 100px 0px;
   }
 }
 
