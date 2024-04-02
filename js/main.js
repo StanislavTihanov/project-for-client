@@ -2,7 +2,9 @@
 
 //------------------------------------------------------------------------скрипт для отправки формы
 jQuery(document).ready(function () {
+    
   $(".phone").mask("+7 (999) 999-99-99"); 
+  
   jQuery('.send-form').click( function() {
     var form = jQuery(this).closest('form');
     
@@ -18,6 +20,8 @@ jQuery(document).ready(function () {
         success: function(data) {
           form.html(data);
           form.css('opacity','1');
+                  //form.find('.status').html('форма отправлена успешно');
+                  //$('#myModal').modal('show') // для бутстрапа
         },
         error:	 function() {
             form.find('.status').html('серверная ошибка');
@@ -25,6 +29,8 @@ jQuery(document).ready(function () {
       });
     }
   });
+
+
 });
 //------------------------------------------------------------------------скрипт для отправки формы
 
@@ -62,7 +68,7 @@ const list = document.querySelector('.categories__list');
 //------------------------------------------------------------------------выпадающий список у шапки
 
 //------------------------------------------------------------------------Меню-Бургер
-const burgerMenu = document.querySelector('.header__burger');
+const burgerMenu = document.querySelector('.header__burger-wrapper');
 const menuBody= document.querySelector('.menu');
 
 if(burgerMenu) {
